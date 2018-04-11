@@ -1,0 +1,23 @@
+#添加数据源要配置其他的东西
+#spring:
+#  datasource:
+#    username: root
+#    password: p@swrd123
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/nsfc_all?useUnicode=true&amp;characterEncoding=gbk&amp;zeroDateTimeBehavior=convertToNull&amp;allowMultiQueries=true&amp;allowMultiQueries=true
+#
+
+#logging:
+#  level:
+##    org.springframework.web: debug
+#    cn.tyrone.springboot.integrate.mybatis.dao: debug
+#  file: D:/springboot/log.log
+#mybatis:
+#  mapper-locations: /mapper/*.xml
+
+#pagehelper分页插件
+#pagehelper:
+#    helperDialect: mysql
+#    reasonable: true
+#    supportMethodsArguments: true
+#    params: count=countSql

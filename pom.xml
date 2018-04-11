@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<!-- 基本信息 -->
+	<description>nsfc-platform web平台项目 </description>
+	<modelVersion>4.0.0</modelVersion>
+	<name>nsfc-platform</name>
+	<packaging>pom</packaging>
+
+	<!-- 项目说明：这里作为聚合工程的父工程 -->
+	<groupId>com.nsfc</groupId>
+	<artifactId>nsfc-platform</artifactId>
+	<version>1.0.0.RELEASE</version>
+
+	<!-- 模块说明：这里声明多个子模块 -->
+	<modules>
+		<module>nsfc-platform-ws</module>
+		<module>nsfc-platform-service</module>
+		<module>nsfc-platform-dao</module>
+		<module>nsfc-platform-common</module>
+	</modules>
+
+	<!-- 继承说明：这里继承SpringBoot提供的父工程 -->
+	<!--<parent>-->
+		<!--<groupId>org.springframework.boot</groupId>-->
+		<!--<artifactId>spring-boot-starter-parent</artifactId>-->
+		<!--<version>2.0.1.RELEASE</version>-->
+		<!--<relativePath/>-->
+	<!--</parent>-->
+
+	<!-- 版本说明：这里统一管理依赖的版本号 -->
+	<dependencyManagement>
+		<dependencies>
+
+			<!--父模块依赖继承-->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>2.0.1.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<!-- 分页插件 -->
+			<dependency>
+				<groupId>com.github.pagehelper</groupId>
+				<artifactId>pagehelper-spring-boot-starter</artifactId>
+				<version>1.1.2</version>
+			</dependency>
+			<!--&lt;!&ndash;mysql连接&ndash;&gt;-->
+			<!--<dependency>-->
+				<!--<groupId>mysql</groupId>-->
+				<!--<artifactId>mysql-connector-java</artifactId>-->
+			<!--</dependency>-->
+
+			<dependency>
+				<groupId>org.mybatis.spring.boot</groupId>
+				<artifactId>mybatis-spring-boot-starter</artifactId>
+				<version>1.2.0</version>
+			</dependency>
+
+
+		</dependencies>
+	</dependencyManagement>
+
+	<!--显示声明插件  配置父依赖的继承-->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>
