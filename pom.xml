@@ -33,32 +33,20 @@
 	<dependencyManagement>
 		<dependencies>
 
-			<!--父模块依赖继承-->
+			<!--父模块依赖继承-->  <!--依赖的继承问题好像还没有解决 不知道这里面的redis的处理是不是可以支持-->
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-dependencies</artifactId>
-				<version>2.0.1.RELEASE</version>
+				<version>1.5.9.RELEASE</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-			<!-- 分页插件 -->
-			<dependency>
-				<groupId>com.github.pagehelper</groupId>
-				<artifactId>pagehelper-spring-boot-starter</artifactId>
-				<version>1.1.2</version>
-			</dependency>
-			<!--&lt;!&ndash;mysql连接&ndash;&gt;-->
-			<!--<dependency>-->
-				<!--<groupId>mysql</groupId>-->
-				<!--<artifactId>mysql-connector-java</artifactId>-->
-			<!--</dependency>-->
 
+			<!--添加redis-->
 			<dependency>
-				<groupId>org.mybatis.spring.boot</groupId>
-				<artifactId>mybatis-spring-boot-starter</artifactId>
-				<version>1.2.0</version>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-redis</artifactId>
 			</dependency>
-
 
 		</dependencies>
 	</dependencyManagement>

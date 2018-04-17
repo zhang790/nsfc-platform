@@ -16,6 +16,13 @@
 	</parent>
 
 	<dependencies>
+		<!--自定义框架类-->
+		<dependency>
+			<groupId>com.nsfc</groupId>
+			<artifactId>framelib</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 		<dependency>
 			<groupId>com.nsfc</groupId>
 			<artifactId>platform-common</artifactId>

@@ -1,10 +1,26 @@
 package com.nsfc.platform.user.service;
 
-import com.nsfc.platform.user.dao.User;
-
-import java.util.List;
+import com.nsfc.common.util.ReturnData;
+import com.nsfc.platform.userinfo.model.UserInfo;
 
 public interface UserService {
+/**
+ * 无法引入本地打的包  怀疑是路径问题
+ */
 
-     List<User> list();
+   /**
+    * 登录
+    * @param username
+    * @param pwd
+    * @return
+    */
+   ReturnData login(String username, String pwd);
+
+   /**
+    * 注册
+    * @param vo
+    * @return
+    */
+   ReturnData register(UserInfo vo);
+
 }
