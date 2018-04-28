@@ -4,6 +4,23 @@ test use spring boot project
 登录接口没有  进行测试
 
 接下来
+<<<<<<< HEAD
 （1）解决mybatis的扫描位置问题（不使用无xml的形式）  已经解决
 （2）解决Springboot的继承问题
 （3）
+=======
+（1）解决mybatis的扫描位置问题（不使用无xml的形式） 完成
+（2）解决Springboot的继承问题    暂时没有解决  优先级低
+（3）json格式化处理和拦截  查看所有用户的接口
+（4）Spring Boot 的热部署（优先级低）  redis的实践
+（5）多环境配置
+（6）扫描性事务配置  事务的问题
+（7）多数据源配置（优先级低）
+（8）前后端分离的实践  用户管理系统
+（9）配置启动页面
+（10）添加shrio
+
+服务器端  搭建部署环境
+（5）nginx 配置策略
+（6）jenkins + docker + git + alians配置
+>>>>>>> 部分log4j日志的代码
