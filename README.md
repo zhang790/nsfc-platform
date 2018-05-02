@@ -24,3 +24,7 @@ test use spring boot project
 （5）nginx 配置策略
 （6）jenkins + docker + git + alians配置
 >>>>>>> 部分log4j日志的代码
+
+idea的默认maven的编译java版本是1.5  需要处理一下
+
+尝试了一下单元测试，网上的很多版本太老了（或者是因为我的版本太新了）
