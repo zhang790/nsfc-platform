@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @Service("userServiceImpl")
@@ -21,8 +22,8 @@ public class UserServiceImpl  implements UserService {
     @Autowired
     private UserInfoMapper userInfoMapper;
 
-    @Autowired
-    private RedisTemplate<String, Object> redisTemplate;
+    @Resource
+    private RedisTemplate redisTemplate;
 
     public ReturnData login(String username, String pwd) {
 

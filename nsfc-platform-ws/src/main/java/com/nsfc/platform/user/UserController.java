@@ -63,7 +63,7 @@ public class UserController {
      * @param modelMap
      * @return
      */
-    @RequestMapping(value = "register", method = RequestMethod.POST)
+    @RequestMapping(value = "/all", method = RequestMethod.POST)
     @ResponseBody
     public String userInfoList(ModelMap modelMap){
 
