@@ -63,9 +63,12 @@ public class UserController {
      * @param modelMap
      * @return
      */
+    @RequestMapping(value = "register", method = RequestMethod.POST)
+    @ResponseBody
     public String userInfoList(ModelMap modelMap){
 
-        return null;
+        ReturnData returnData = userService.getUserList();
+        return returnData.toString();
     }
 
     /**
