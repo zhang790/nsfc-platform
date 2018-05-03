@@ -290,4 +290,18 @@ public class UserInfo implements Serializable {
     public void setEmail(String email) {
         this.email = email == null ? null : email.trim();
     }
+
+
+    @Override
+    public String toString() {
+        return "UserInfo{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", ages=" + ages +
+                ", gender=" + gender +
+                ", mobilephone='" + mobilephone + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }

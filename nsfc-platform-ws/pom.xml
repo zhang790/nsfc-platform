@@ -78,11 +78,11 @@
 		<!--</dependency>-->
 
 		<!--热部署引入-->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<optional>true</optional>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-devtools</artifactId>-->
+			<!--<optional>true</optional>-->
+		<!--</dependency>-->
 
 		<!--添加fastjson解析JSON数据-->
 		<dependency>
@@ -91,6 +91,17 @@
 			<version>1.2.16</version>
 		</dependency>
 
+		<!--添加swagger-->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.5.0</version>  <!--调整版本解决启动控制问题  原因是和SpringCloud包冲突-->
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.5.0</version> <!--调整版本解决启动控制问题  原因是和SpringCloud包冲突-->
+		</dependency>
 	</dependencies>
 
 	<build>

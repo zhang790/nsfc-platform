@@ -29,3 +29,9 @@ log4J日志代码
 idea的默认maven的编译java版本是1.5  需要处理一下
 
 尝试了一下单元测试，网上的很多版本太老了（或者是因为我的版本太新了）
+
+20180503
+添加Swagger2Api工具  地址http://localhost:8080/swagger-ui.html#/user-controller
+
+添加redis配置
+redis配置使用的是最简单的方式而不是2.0.0之后的方式

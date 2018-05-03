@@ -23,4 +23,10 @@ public interface UserService {
     */
    ReturnData register(UserInfo vo);
 
+   /**
+    * 获取用户信息列表
+    * @return
+    */
+   ReturnData getUserList();
+
 }
