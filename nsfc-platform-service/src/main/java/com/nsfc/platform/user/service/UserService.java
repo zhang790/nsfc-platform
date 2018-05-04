@@ -29,4 +29,9 @@ public interface UserService {
     */
    ReturnData getUserList();
 
+   /**
+    * 测试事务
+    */
+   void testTransaction();
+
 }

@@ -10,8 +10,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.List;
 
 @Service("userServiceImpl")
@@ -83,4 +85,31 @@ public class UserServiceImpl  implements UserService {
         returnData.setRetCode(1);
         return returnData;
     }
+
+    @Transactional
+    @Override
+    public void testTransaction() {
+
+        List<UserInfo> userInfos = new ArrayList<>();
+
+        for (int i=1; i<=4; i++){
+            UserInfo userInfo = new UserInfo();
+            userInfo.setId(i);
+            userInfo.setAges(18 + i);
+            userInfo.setUsername("zhang790" + i);
+            userInfo.setPassword("xxxxxxxx");
+            userInfo.setMobilephone("1232112412");
+            userInfo.setGender(true);
+            userInfo.setEmail("dsadada@dsada.com");
+            userInfos.add(userInfo);
+        }
+
+        for (UserInfo info : userInfos){
+//            if (info.getId().equals(3)){
+//                int k = 1/0;
+//            }
+            userInfoMapper.updateByPrimaryKey(info);
+        }
+    }
+
 }

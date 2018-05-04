@@ -106,4 +106,14 @@ public class UserController {
     public String getUserById(@PathVariable("id") String id, ModelMap modelMap){
         return null;
     }
+
+    /**
+     * 测试事务
+     * @return
+     */
+    @RequestMapping(value = "/testTransactions")
+    public String testTransaction(){
+        userService.testTransaction();
+        return null;
+    }
 }
