@@ -1,7 +1,6 @@
 package com.nsfc.platform.user.service;
-
-import com.nsfc.common.util.ReturnData;
 import com.nsfc.platform.userinfo.model.UserInfo;
+import com.zhang.util.bean.ReturnData;
 
 public interface UserService {
 /**

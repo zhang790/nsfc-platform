@@ -1,8 +1,8 @@
 package com.nsfc.platform.user;
 
-import com.nsfc.common.util.ReturnData;
 import com.nsfc.platform.user.service.UserService;
 import com.nsfc.platform.userinfo.model.UserInfo;
+import com.zhang.util.bean.ReturnData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;

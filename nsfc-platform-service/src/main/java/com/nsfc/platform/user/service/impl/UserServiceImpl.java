@@ -1,10 +1,10 @@
 package com.nsfc.platform.user.service.impl;
 
-import com.nsfc.common.util.ReturnData;
 import com.nsfc.platform.user.service.UserService;
 import com.nsfc.platform.userinfo.mapper.UserInfoMapper;
 import com.nsfc.platform.userinfo.model.UserInfo;
 import com.nsfc.platform.userinfo.model.UserInfoExample;
+import com.zhang.util.bean.ReturnData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
