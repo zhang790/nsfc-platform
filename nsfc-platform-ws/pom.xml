@@ -82,7 +82,7 @@
 			<version>2.5.0</version> <!--调整版本解决启动控制问题  原因是和SpringCloud包冲突-->
 		</dependency>
 
-		<!--连接池-->
+		<!--连接池和sql监控-->
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid</artifactId>
