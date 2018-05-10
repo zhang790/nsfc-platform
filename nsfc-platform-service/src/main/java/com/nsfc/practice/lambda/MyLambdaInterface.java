@@ -1,4 +1,4 @@
-package com.nsfc.platform.user.service;
+package com.nsfc.practice.lambda;
 
 /**
  * 自定义lambda函数式接口

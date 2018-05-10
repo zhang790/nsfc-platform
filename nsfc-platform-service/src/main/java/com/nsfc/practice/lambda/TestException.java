@@ -1,4 +1,4 @@
-package com.nsfc.platform.user.service.impl;
+package com.nsfc.practice.lambda;
 
 /**
  * 测试一个异常

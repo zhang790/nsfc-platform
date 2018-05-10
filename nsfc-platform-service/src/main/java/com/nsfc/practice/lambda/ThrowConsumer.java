@@ -1,4 +1,4 @@
-package com.nsfc.platform.user.service.impl;
+package com.nsfc.practice.lambda;
 
 /**
  * 自定义函数接口处理cheked异常

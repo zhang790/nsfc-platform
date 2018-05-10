@@ -1,4 +1,4 @@
-package com.nsfc.platform.user.service.impl;
+package com.nsfc.practice.lambda;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -41,7 +41,6 @@ public class LambdaHandleCheckedException {
 
                 }
             }
-
         };
     }
 

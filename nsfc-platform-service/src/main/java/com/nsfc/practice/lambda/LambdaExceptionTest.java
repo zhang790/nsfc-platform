@@ -1,4 +1,4 @@
-package com.nsfc.platform.user.service.impl;
+package com.nsfc.practice.lambda;
 
 import java.util.Arrays;
 import java.util.List;

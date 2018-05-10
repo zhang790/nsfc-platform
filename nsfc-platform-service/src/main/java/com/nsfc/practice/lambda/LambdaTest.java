@@ -1,6 +1,4 @@
-package com.nsfc.platform.user.service.impl;
-
-import com.nsfc.platform.user.service.MyLambdaInterface;
+package com.nsfc.practice.lambda;
 
 import java.util.Arrays;
 import java.util.List;
