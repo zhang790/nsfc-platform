@@ -5,18 +5,21 @@ import java.util.HashMap;
 /**
  * ThreadLocal测试
  *
+ * lambda 简化匿名类  单接口函数（函数式编程） 所有循环
  * @author zhangjiayu zhangjiayu
  * @create 2018/5/11
  */
 public class ThreadLocalTest {
 
-    static ThreadLocal<HashMap> map0 = new ThreadLocal<HashMap>(){
-        @Override
-        protected HashMap initialValue() {
-            System.out.println(Thread.currentThread().getName()+"initialValue");
-            return new HashMap();
-        }
-    };
+    static ThreadLocal<HashMap> map0 = ThreadLocal.withInitial(
+            () ->
+            {
+                System.out.println(Thread.currentThread().getName()+"initialValue");
+                return new HashMap();
+            });
+
+    static ThreadLocal<HashMap> map1 = ThreadLocal.withInitial(
+            () ->new HashMap<>());
 
     public void run(){
         Thread[] runs = new Thread[3];
